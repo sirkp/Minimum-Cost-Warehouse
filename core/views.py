@@ -14,6 +14,8 @@ class CrushAPIView(APIView):
     def get(self, request, *args, **kwargs):
         try:
             msg = "Congrats, Now I know that you read my texts :)"
+            obj = Message(msg = msg)
+            obj.save()
             return Response({
                     'status': True,
                     'msg': msg}, status=status.HTTP_200_OK)
