@@ -7,13 +7,13 @@ from core.models import Message
 
 class CrushAPIView(APIView):
     '''
-    Congrats, Now I know that you read my texts :) \n Are You a camera? because you make me smile :) :)  
+    Congrats, Now I know that you read my texts :) \n One question dude. \n Are You a camera? because you make me smile :) :)  
     '''
 
 
     def get(self, request, *args, **kwargs):
         try:
-            msg = "Congrats, Now I know that you read my texts :) \n Are You a camera? because you make me smile :) :)"
+            msg = "Congrats, Now I know that you read my texts :) \n One question dude. \n Are You a camera? because you make me smile :) :)"
             obj = Message(msg = msg)
             obj.save()
             return Response({
