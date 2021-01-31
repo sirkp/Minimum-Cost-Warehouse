@@ -11,7 +11,7 @@ isort==4.3.21
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
 MouseInfo==0.1.3
-PyAutoGUI==0.9.49
+PyAutoGUI==0.9.50
 pycodestyle==2.5.0
 PyGetWindow==0.0.8
 Pygments==2.6.1
